@@ -18,13 +18,13 @@ int main()
     int shape_y = 1000;
 
     circle.setPosition(100, shape_y);
-    circle.setOrigin(100, 100);
+    circle.setOrigin(0, 0);
 
     rectangle.setPosition(400, shape_y);
-    rectangle.setOrigin(50, 25);
+    rectangle.setOrigin(0, 0);
 
     triangle.setPosition(800, shape_y);
-    triangle.setOrigin(60, 60);
+    triangle.setOrigin(0, 0);
 
     circle.setFillColor(sf::Color::Green);
     rectangle.setFillColor(sf::Color::Yellow);
