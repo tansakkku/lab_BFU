@@ -6,6 +6,35 @@
 
 namespace hd 
 {
+
+    void Input(int n, int m, int mas[v][v])
+    {
+        int elem;
+        for (int i = 0; i < n; i++)
+            for (int j = 0; j < m; j++)
+            {
+                std::cout << "stolb " << i + 1 << ", strok " << j + 1 << ": ";
+                std::cin >> elem;
+                mas[i][j] = elem;
+            }
+        std::cout << std::endl;
+    }
+
+    void Output(int n, int m, int mas[v][v])
+    {
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < m; j++)
+                std::cout << mas[i][j] << "  ";
+            std::cout << std::endl;
+        }
+        std::cout << std::endl;
+
+    
+    }
+
+
+
     bool Min(int mas[v][v], int n, int m)
     {
         int minimum = 100000;
@@ -66,15 +95,15 @@ namespace hd
 
 
 
-    void Sum_Strok_i_Sort(int sum[w], int mas[v][v], int n, int m)
+    void Proizved_Strok_i_Sort(int sum[w], int mas[v][v], int n, int m)
     {
 
         for (int i = 0; i < n; i++)
         {
-            int summ = 0;
+            int summ = 1;
             for (int j = 0; j < m; j++)
             {
-                summ = summ + mas[i][j];
+                summ = summ * mas[i][j];
                 sum[i] = summ;
 
             }

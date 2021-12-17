@@ -20,15 +20,26 @@ int main()
 {
    
     int n, m;
-    std::ifstream in("input.txt");
-    in >> n >> m;
-    for (int i = 0; i < n; i++)
-        for (int j = 0; j < m; j++)
-            in >> mas[i][j];
+   
+   
+    
+    std::cout << "Stroki: ";
+    std::cin >> n;
+    std::cout << std::endl;
+    std::cout << "Stolbi: ";
+    std::cin >> m;
+    std::cout << std::endl;
+
+    hd::Input(n, m, mas);
+
+    std::cout << "Matrix: " << std::endl;
+
+    hd::Output(n, m, mas);
+
 
     
     if (hd::Min(mas, n, m) == true && hd::Max(mas, n, m) == true)
-        hd::Sum_Strok_i_Sort(sum, mas, n, m);
+        hd::Proizved_Strok_i_Sort(sum, mas, n, m);
 
     else
     {
