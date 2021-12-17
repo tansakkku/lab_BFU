@@ -15,6 +15,6 @@ add_executable("${PROJECT_NAME}" 6.1.cpp
 
 					src/Source.cpp
 
-					input/input.txt
+					
 )
 
