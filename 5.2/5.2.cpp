@@ -33,9 +33,7 @@ int main()
 			if (s[i] >= 'A' && s[i] <= 'Z')
 				s[i] += 32;
 		
-		
 
-		
 		bool proverka = false;
 		for (int i = 0; i < s.length(); i++)
 			for(int j = 0; j < s.length(); j++)
@@ -45,7 +43,6 @@ int main()
 					break;
 				}
 
-		
 		if (not proverka)
 		{
 			bool sl = false;
@@ -72,6 +69,7 @@ int main()
 		
 	for (int i = 0; i < num; i++)
 		out << b[i] << endl;
-		
-	
+
+	return 0;
+			
 }
